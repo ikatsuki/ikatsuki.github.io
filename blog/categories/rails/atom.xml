@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rails | Step by Step]]></title>
+  <link href="http://ikatsuki.github.io/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://ikatsuki.github.io/"/>
+  <updated>2015-03-10T22:44:03+09:00</updated>
+  <id>http://ikatsuki.github.io/</id>
+  <author>
+    <name><![CDATA[Katsuki Ito]]></name>
+    <email><![CDATA[ik2721@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[20150311]]></title>
+    <link href="http://ikatsuki.github.io/blog/2015/03/10/20150311/"/>
+    <updated>2015-03-10T22:20:41+09:00</updated>
+    <id>http://ikatsuki.github.io/blog/2015/03/10/20150311</id>
+    <content type="html"><![CDATA[<h2>プロジェクト概要</h2>
+
+<p>Google Mapを使用して、旅行のしおりを作成できるようなWebアプリケーションを作成する。</p>
+
+<ol>
+<li>旅のしおり一覧表示</li>
+<li>旅のしおり作成</li>
+<li>旅のしおり編集</li>
+<li>旅のしおり削除</li>
+<li>・・・</li>
+</ol>
+
+
+<h5>　</h5>
+
+<h2>プロジェクトアーキテクチャ</h2>
+
+<h5>Programming Language</h5>
+
+<ul>
+<li>Ruby v2.2.0</li>
+</ul>
+
+
+<h5>Application Framework</h5>
+
+<ul>
+<li>Rails v4.2.0</li>
+</ul>
+
+
+<h5>Test</h5>
+
+<ul>
+<li>RSpec v3.2.1</li>
+</ul>
+
+
+<h5>Database</h5>
+
+<ul>
+<li>PostgreSQL v9.4.1</li>
+</ul>
+
+
+<h5>　</h5>
+
+<h2>Create New Project</h2>
+
+<pre><code>% mkdir placememo
+% cd palcememo
+% rbenv local 2.2.0     # rubyバージョン指定
+% ruby -v
+ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]
+% bundle init           # Gemfile作成
+% vim Gemfile           # Gemfile修正（内容はGemfile(1)）
+% bundle install --path=vendor/bundle --binstubs=vendor/bin
+% bundle exec rails -v  # バージョン確認
+Rails 4.2.0
+% bundle exec rails new . --database=postgresql -T --skip-bundle    # プロジェクト作成
+% vim Gemfile           # Gemfile修正（内容はGemfile(2)）
+% bundle install
+</code></pre>
+
+<h5>Gemfile(1)</h5>
+
+<pre><code>source "https://rubygems.org"
+gem 'rails', '4.2.0'
+</code></pre>
+
+<h5>Gemfile(2)</h5>
+
+<pre><code>source 'https://rubygems.org'
+
+gem 'rails', '4.2.0'
+gem 'pg'
+gem 'sass-rails', '~&gt; 5.0'
+gem 'uglifier', '&gt;= 1.3.0'
+gem 'jquery-rails'
+gem 'jbuilder', '~&gt; 2.0'
+gem 'sdoc', '~&gt; 0.4.0', group: :doc
+
+group :development, :test do
+  gem 'rspec-rails', '~&gt; 3.2.1'
+  gem 'factory_girl_rails', '~&gt; 4.5.0'
+end
+</code></pre>
+
+<h2>参考</h2>
+
+<p><a href="https://rubygems.org/">rubygems.org</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Step by Step]]></title>
   <link href="http://ikatsuki.github.io/atom.xml" rel="self"/>
   <link href="http://ikatsuki.github.io/"/>
-  <updated>2015-03-11T22:48:55+09:00</updated>
+  <updated>2015-03-11T23:24:00+09:00</updated>
   <id>http://ikatsuki.github.io/</id>
   <author>
     <name><![CDATA[Katsuki Ito]]></name>
@@ -133,6 +133,23 @@
 </span><span class='line'>  gem 'rspec-rails', '~&gt; 3.2.1'
 </span><span class='line'>  gem 'factory_girl_rails', '~&gt; 4.5.0'
 </span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Create Git Repository</h2>
+
+<p>作成したプロジェクトをGitで管理する。
+今回はリモートレポジトリとして、GitHubを使用する。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>% git init 
+</span><span class='line'>% git add
+</span><span class='line'>% git commit -m "First commit"
+</span><span class='line'>% git remote add origin https://github.com/ikatsuki/placememo.git
+</span><span class='line'>% git push -u origin master</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>参考サイト</h2>

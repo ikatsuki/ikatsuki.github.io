@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rails | Step by Step]]></title>
   <link href="http://ikatsuki.github.io/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://ikatsuki.github.io/"/>
-  <updated>2015-03-10T22:47:36+09:00</updated>
+  <updated>2015-03-11T22:48:55+09:00</updated>
   <id>http://ikatsuki.github.io/</id>
   <author>
     <name><![CDATA[Katsuki Ito]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Web Application ~ Create Project ~]]></title>
-    <link href="http://ikatsuki.github.io/blog/2015/03/10/20150311/"/>
-    <updated>2015-03-10T22:20:41+09:00</updated>
-    <id>http://ikatsuki.github.io/blog/2015/03/10/20150311</id>
+    <link href="http://ikatsuki.github.io/blog/2015/03/11/20150311/"/>
+    <updated>2015-03-11T22:41:14+09:00</updated>
+    <id>http://ikatsuki.github.io/blog/2015/03/11/20150311</id>
     <content type="html"><![CDATA[<h2>プロジェクト概要</h2>
 
 <p>Google Mapを使用して、旅行のしおりを作成できるようなWebアプリケーションを作成する。</p>
@@ -33,7 +33,7 @@
 
 <h5>　</h5>
 
-<h2>プロジェクトアーキテクチャ</h2>
+<h2>アーキテクチャ</h2>
 
 <h5>Programming Language</h5>
 
@@ -49,7 +49,7 @@
 </ul>
 
 
-<h5>Test</h5>
+<h5>Unit Test</h5>
 
 <ul>
 <li>RSpec v3.2.1</li>
@@ -106,7 +106,7 @@ group :development, :test do
 end
 </code></pre>
 
-<h2>参考</h2>
+<h2>参考サイト</h2>
 
 <p><a href="https://rubygems.org/">rubygems.org</a></p>
 ]]></content>
